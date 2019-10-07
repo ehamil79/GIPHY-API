@@ -1,10 +1,8 @@
 // Initial Values
-const API_KEY = '25M6AUpMu4QVl6CarZO1lGC6p2aHbT60';
-const endpoint = `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}`;
-const giphys = ['Donald Trump', 'Barack Obama', 'Lion'];
-let buttons = ['Cats', 'Dogs', 'Lions'];
+const API_KEY = 'tsUSc5cTDhkWGv0BRBCbQNA8FP2UY6WX';
+const endpoint = `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&limit=10`;
+let buttons = ['Bill Murrey', 'Michael J Fox', 'Tommy Lee Jones'];
 let favorites = [];
-let isFavoriteOnly = false;
 let currentSearch = [];
 
 // load buttons from localStorage

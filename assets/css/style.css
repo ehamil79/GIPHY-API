@@ -1,157 +1,117 @@
-body {
-    background-color: #45454d;
-}
 h1 {
+    font-family: cursive;
     text-align: center;
-    margin-top: 1.5em;
-    margin-bottom: .9em;
-    text-shadow: 3px 3px #ff4893;
-    font-weight: 800;
+    font-size: 65px;
+    color: gainsboro;
 }
 
-label, h1, #clear-message {
-    color: #fff;
+body {
+    background: url(./../images/210888.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* I want to make the background non-scrollable */
 }
 
-.form #search {
-    border: 1px solid #fff1e9;
-    box-shadow: none;
+#clear-result {
+    width: 10em;
 }
 
 form {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-
 }
-
-#clear-results {
-    width: 10em;
-}
-
-#clear-results, #submit-button{
-    margin-left: .5em;
-    background-color: #ff4893;
-    border: 1px solid #fff1e9;
-}
-
-#btn-star {
-    padding: .9em;
-}
-
-
 
 .recent-search {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 
 .giphy-content {
-    column-count: 3;
-    column-gap: 1em;
+    column-count: 4 ;
 }
 
-
 .giphy {
-    border: 1px solid #ffd5d5;
-    border-radius: .5em;
-    border-bottom: .5em solid #ff4893;
-    position: relative;
+    border: 1px solid black;
+    border-radius: 15px;
+    border-bottom: 5px solid black;
     overflow: hidden;
     margin: 0;
     padding: 0;
-    margin-bottom: .5em;
+    margin-bottom: 10px;
     page-break-inside: avoid;
-    background-color: #fff1e9;
-    box-shadow: 9px 20px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    background-color: rgb(17, 17, 90);
+    box-shadow: 5px 5px 15px rgb(77, 31, 31);
+    color: gainsboro;
+    font-family: cursive
 }
 
 .giphy img {
-    position: relative;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-
-.giphy-image {
-    cursor: pointer;
 }
 
 .fa-play {
-    opacity: 0;
+    font-size: 50px;
+    background-color: rgb(17, 17, 90);
+    padding: 5px;
     position: absolute;
-    font-size: .9em;
     top: 25%;
-    z-index: 1;
-    transform: translate(-50%, 0);
     left: 50%;
-    background-color: #ff4893;
-    padding: 1em;
-    border-radius: 50%;
-    color: #fff1e9;
-}
-
-.giphy-image:hover .img-play {
-    opacity: 1;
+    transform: translate(-30%, 0);
+    opacity: 0;
+    cursor: pointer; 
+    
 }
 
 .favorite {
     position: absolute;
-    right: 0;
-    z-index: 2;
-    padding: .5em;
     cursor: pointer;
-    border-bottom-left-radius: .5em;
-    background-color: #ff4893;
+    background-color: rgb(17, 17, 90);
+    padding: 7px;
 }
 
+
+.giphy-image:hover .img-play {
+    opacity: 5;
+}
 
 .giphy-info {
     display: flex;
     justify-content: space-between;
-    margin: 3em .5em;
+    margin: 2em .5em;
 }
 
 .giphy-footer {
     text-align: center;
     border: 1px solid lightgrey;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
     cursor: pointer;
+    border-radius: 15px;
 }
-
-.buttons {
-    border-radius: .5em;
-    margin-left: 10px;
-    /* background-color: #ffd5d5; */
-    margin-bottom: 1em;
-    border: 1px solid #fff1e9;
-}
-
 
 .active {
-    background-color: #ff4893;
+    background-color: rgb(17, 17, 90);
+    
 }
 
-.buttons:hover {
-    background-color: #ff4893;
+#submit-button, #clear-result {
+    background-color: rgb(17, 17, 90);
+    margin-left: 5px;
+    border: 1px solid black;
 }
 
-.buttons button {
-    color: #fff;
-    margin: 0;
-    text-align: center;
+.btn {
+    color: gainsboro;
+    font-family: cursive;
 }
 
-.buttons .btn:focus {
-    box-shadow: none;
-}
-
-
-.buttons .btn-close {
-    border-radius: 0;
-    border-left: 1px solid black;
+.form-check-label {
+    color: yellowgreen;
+    font-family: cursive;
 }
